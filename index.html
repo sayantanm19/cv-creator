@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>ECard Generator</title>
+</head>
+
+<body>
+  <div class="generator-module">
+    <h1>About Me Page</h1>
+    <form id="cv-form">
+      <section class="container">
+        <div class="profile-pic"></div>
+        <div class="name">
+          <label for="nameField">Name</label>
+          <input type="text" placeholder="CJ Patoilo" id="nameField" value="Ramsey Booton">
+        </div>
+        <div class="location">
+          <label for="locField">Location</label>
+          <input type="text" placeholder="New Delhi" id="locField" value="New York">
+        </div>
+        <div class="current-work">
+          <label for="workField">Current Workplace</label>
+          <input type="text" placeholder="Apple Systems" id="workField" value="Foody InfoSystems">
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="container">
+        <div class="skills">
+          <label>Skills</label>
+          <!-- <input type="text" placeholder="Python" class="skillsField"> -->
+          <div class="row skill">
+            <div class="column column-80">
+              <input type="text" placeholder="HTML, CSS, JS" class="skill-name" value="HTML"/>
+            </div>
+            <div class="column column-20">
+              <input type="button" value="Remove" onclick="removeSkill(this.parentNode)">
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="button" onclick="addSkill();">Add Skill</button>
+      </section>
+
+      <!-- Previous Work Experience Section -->
+      <section class="container">
+        <div class="workExp">
+          <label>Previous Work Experience</label>
+          <div class="row work">
+            <div class="column column-60">
+              <input type="text" placeholder="Software Developer at Google" class="work-name" value="Web Dev"/>
+            </div>
+            <div class="column column-10">
+              <input type="text" placeholder="From" class="work-start" value="9 May 2010"/>
+            </div>
+            <div class="column column-10">
+              <input type="text" placeholder="To" class="work-end" value="9 May 2011"/>
+            </div>
+            <div class="column column-20">
+              <input type="button" value="Remove" onclick="removeWork(this.parentNode)">
+            </div>
+          </div>
+
+        </div>
+        <button type="button" class="button" onclick="addWork();">Add Work Experience</button>
+        <hr>
+    </form>
+    <button type="button" class="button button-outline" onclick="makeCV();">Build CV</button>
+    </section>
+  </div>
+
+  <section class="container">
+    <div class="cv-output">
+      <!-- <h1>Your CV</h1> -->
+      <i class="material-icons profile-pic">account_circle</i>
+      <div id='final-name'></div>
+      <div class="loc-widget"><i class="material-icons">location_on</i><div id='final-location'></div></div>
+      <div class="work-widget"><i class="material-icons">work</i><div id='final-work'></div></div>
+      <div class="skills-widget">
+          <div class="skill-header">Skills</div>
+          <div id='final-skills'></div>
+      </div>
+      <div class="workexp-widget">
+          <div class="workexp-header">Work Experience</div>
+          <div id='final-workexp'></div>
+      </div>
+
+    </div>
+    <button type="button" class="button button-outline" onclick="resetForm();">Reset Form</button>
+
+  </section>
+
+  <!-- Debug Section -->
+  <!-- <section class="container">
+    <h2>Debug buttons</h2>
+    <button onclick="getSkills()">Get skills list</button>
+    <button onclick="getWorks()">Get Work list</button>
+  </section> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.container {
+    margin: 0 auto;
+}
+
+i {
+    padding-right: 5px;
+}
+
+li {
+    list-style-position: outside;
+}
+
+.cv-output {
+    display: none;
+
+    border: 2px solid;
+    border-radius: 10px;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    font-size: 120px;
+}
+
+#final-name {
+    font-size: 5rem;
+}
+
+.loc-widget {
+    display: flex;
+    font-size: 2rem;
+}
+
+.work-widget {
+    display: flex;
+    font-size: 2rem;
+}
+
+.skills-widget {
+    /* border: 1px solid gray;
+    border-radius: 10px; */
+    /* padding: 15px 15%; */
+    margin: 10px;
+}
+
+.skill-header {
+    font-size: 2rem;
+}
+
+.workexp-widget {
+    /* border: 1px solid gray;
+    border-radius: 10px; */
+    /* padding: 15px 15%; */
+    margin: 10px;
+}
+
+.workexp-header {
+    font-size: 2rem;
+}
+
