@@ -39,7 +39,7 @@
           <!-- <input type="text" placeholder="Python" class="skillsField"> -->
           <div class="row skill">
             <div class="column column-80">
-              <input type="text" placeholder="HTML, CSS, JS" class="skill-name" value="HTML"/>
+              <input type="text" placeholder="HTML" class="skill-name" value="HTML" />
             </div>
             <div class="column column-20">
               <input type="button" value="Remove" onclick="removeSkill(this.parentNode)">
@@ -56,13 +56,13 @@
           <label>Previous Work Experience</label>
           <div class="row work">
             <div class="column column-60">
-              <input type="text" placeholder="Software Developer at Google" class="work-name" value="Web Dev"/>
+              <input type="text" placeholder="Software Developer at Google" class="work-name" value="Web Dev" />
             </div>
             <div class="column column-10">
-              <input type="text" placeholder="From" class="work-start" value="9 May 2010"/>
+              <input type="text" placeholder="From" class="work-start" value="9 May 2010" />
             </div>
             <div class="column column-10">
-              <input type="text" placeholder="To" class="work-end" value="9 May 2011"/>
+              <input type="text" placeholder="To" class="work-end" value="9 May 2011" />
             </div>
             <div class="column column-20">
               <input type="button" value="Remove" onclick="removeWork(this.parentNode)">
@@ -82,19 +82,25 @@
       <!-- <h1>Your CV</h1> -->
       <i class="material-icons profile-pic">account_circle</i>
       <div id='final-name'></div>
-      <div class="loc-widget"><i class="material-icons">location_on</i><div id='final-location'></div></div>
-      <div class="work-widget"><i class="material-icons">work</i><div id='final-work'></div></div>
-      <div class="skills-widget">
+      <div class="loc-widget"><i class="material-icons">location_on</i>
+        <div id='final-location'></div>
+      </div>
+      <div class="work-widget"><i class="material-icons">work</i>
+        <div id='final-work'></div>
+      </div>
+      <div class="details">
+        <div class="skills-widget">
           <div class="skill-header">Skills</div>
           <div id='final-skills'></div>
-      </div>
-      <div class="workexp-widget">
+        </div>
+        <div class="workexp-widget">
           <div class="workexp-header">Work Experience</div>
           <div id='final-workexp'></div>
+        </div>
       </div>
-
+      <div class="qr-code"></div>
     </div>
-    <button type="button" class="button button-outline" onclick="resetForm();">Reset Form</button>
+    <button type="button" class="button button-outline float-right" onclick="resetForm();">Reset Form</button>
 
   </section>
 
